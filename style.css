@@ -1,0 +1,139 @@
+/* style.css */
+
+.p {
+    font-size: 1.5em;
+    color: #3498db; /* Blue color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+}
+
+#totalVotes {
+    display: inline-block;
+    background: linear-gradient(90deg, #00a1ff, #0059ff); /* Gradient background for shine effect */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.dropdown-menu {
+    width: 560px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #3498db;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 4em;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin: 0;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #087435;
+}
+
+.vote-list {
+    list-style: none;
+    padding: 0;
+}
+
+.vote-item {
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: 2px solid #000000; /* Dark border color */
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #5a0d04;
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%; /* Set the maximum width to 100% for smaller screens */
+        margin: 20px auto;
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        font-size: 3em; /* Reduce the font size for the heading */
+    }
+
+    .dropdown-menu {
+        width: 100%; /* Set the dropdown menu width to 100% for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2em; /* Further reduce the font size for smaller screens */
+    }
+}
+
+/* Add a media query for screens below 266px width */
+@media (max-width: 266px) {
+    h1 {
+        font-size: 1.5em; /* Adjust font size for screens below 266px width */
+    }
+
+    .container {
+        padding: 5px; /* Adjust padding for screens below 266px width */
+    }
+}
